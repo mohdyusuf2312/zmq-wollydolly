@@ -1,0 +1,593 @@
+Picture1 =aditi.png#
+Question 1a=winner of talent-hunt show Cinestars Ki Khoj?
+Question 1b=Rajjo in 'Mausam'?
+Question 1c= Saira Rashid in 'Ladies vs Ricky Bahl'?
+$Answer=Aditi Sharma@
+
+Picture2 =aishwarya.png#
+Question 2a=Miss World of 1994?
+Question 2b=Got  Padma Shri In 2009?
+Question 2c=New paro in 'Devdas'?
+$Answer=Aishwarya Rai@
+
+Picture3 =amirata.png#
+Question 3a=Acting debut with Ab Ke Baras?
+Question 3b=Star Screen Award Best Actress for Vivah?
+Question 3c='Ishq Vishk' girl?
+$Answer=Amrita Rao@
+
+Picture4 =amisha.png#
+Question 4a=Kin with Ashmit?
+Question 4b=Granddaughter of Barrister Rajni Patel?
+Question 4c=Acting debut in 'Kaho Naa Pyaar Hai'?
+$Answer=Ameesha Patel@
+
+Picture5 =anuska.png#
+Question 5a=Acted in 'Band Baaja Baaraat'?
+Question 5b=Debut with 'Rab Ne Bana Di Jodi'?
+Question 5c=Starred in 'Badmaash Company'?
+$Answer=Anushka Sharma@
+
+Picture6 =asin.png#
+Question 6a=Debut in Ghajini?
+Question 6b=Starred in House Full 2?
+Question 6c=Won Best Female Debut Award for Ghajini?
+$Answer=Asin@
+
+Picture7 =bipasha.png#
+Question 7a=won Godrej Cinthol Supermodel Contest in 1996?
+Question 7b=Acting Debut with 'Ajnabee'?
+Question 7c=Sex symbol in 'Jism'?
+$Answer=Bipasha Basu@
+
+Picture8 =deepal.png#
+Question 8a=First album Baby Doll?
+Question 8b=In remixes Kabhi Aar Kabhi Paar?
+Question 8c=Acting debut in controversial 'Kalyug'?
+$Answer=Deepal Shaw@
+
+Picture9 =deepika.png#
+Question 9a=Daughter of badminton player?
+Question 9b=Double role in 'Chandni Chowk To China'?
+Question 9c=Girl in 'Om Shanti Om'?
+$Answer=Deepika Padukone@
+
+Picture10 =diya.png#
+Question 10a=Debut with 'Rehnaa Hai Terre Dil Mein'?
+Question 10b=Won the Miss Asia Pacific title in 2000?
+Question 10c=Second runner up at Femina Miss India 2000?
+$Answer=Dia Mirza@
+
+Picture11 =esha.png#
+Question 11a=Debut in Koi Mere Dil Se Poochhe?
+Question 11b=Daughter of  Hema Malini?
+Question 11c=Daughter of Dharm Paaji?
+$Answer=Esha Deol@
+
+Picture12 =genelia.png#
+Question 12a=Wife of Ritesh Deshmukh?
+Question 12b=Debut with 'Tujhe Meri Kasam'?
+Question 12c=Hosted the television show Big Switch?
+$Answer=Genelia DSouza@
+
+Picture13 =Jacqueline.png#
+Question 13a=Won Miss Sri Lanka Universe in 2006?
+Question 13b=Debut with movie 'Aladin'?
+Question 13c=Special appearance in song of 'Housefull'?
+$Answer=Jacqueline Fernandez@
+
+Picture14 =kangana.png#
+Question 14a=Starred in movie 'Tanu Weds Manu'?
+Question 14b=Debut in 'Gangster'?
+Question 14c=Won Filmfare Best Female Debut Award 2006?
+$Answer=Kangna Ranaut@
+
+Picture15 =Kareena.png#
+Question 15a=Informally referred to as Bebo?
+Question 15b=Starred in Jab We Met?
+Question 15c=Sister of Karisma?
+$Answer=Kareena Kapoor@
+
+Picture16 =Lara.png#
+Question 16a=Debut with the film 'Andaaz'?
+Question 16b=Won Miss Intercontinental in 1997?
+Question 16c=Married to Mahesh Bhupathi?
+$Answer=Lara Dutta@
+
+Picture17 =malika.png#
+Question 17a=First movie 'Jeena Sirf Merre Liye'?
+Question 17b=With Jackie Chan in 'The Myth'?
+Question 17c=Starred in 'Murder'?
+$Answer=Mallika Sherawat@
+
+Picture18 =manisha.png#
+Question 18a=Granddaughter of Prime Minister of Nepal?
+Question 18b=First movie was Saudagar?
+Question 18c=Starred in 1942 A Love Story?
+$Answer=Manisha Koirala@
+
+Picture19 =minissha.png#
+Question 19a=Starred in Well 'Done Abba'?
+Question 19b=Starred in 'Honey Travel Pvt Ltd'?
+Question 19c=Debuted in  film 'Yahaan'?
+$Answer=Minissha Lamba@
+
+Picture20 =nargisF.png#
+Question 20a=Debut in film Rockstar?
+Question 20b=Czech father Pak mother?
+Question 20c=Posed for 2009 Kingfisher Swimsuit Calendar?
+$Answer=Nargis Fakhri@
+
+Picture21 =neha.png#
+Question 21a=Winner of Femina Miss India 2002?
+Question 21b=Debut in film 'Qayamat: City Under Threat'?
+Question 21c=Special Appearance in De Taali?
+$Answer=Neha Dhupia@
+
+Picture22 =prachi.png#
+Question 22a=Best known as Bani Walia in Hindi TV drama?
+Question 22b=Debut in film 'Rock On'?
+Question 22c=Starred in 'Once Upon a Time in Mumbaai'?
+$Answer=Prachi Desai@
+
+Picture23 =priyanka.png#
+Question 23a=Won Miss World title in 2000?
+Question 23b=Won  National Award for 'Fashion'?
+Question 23c=Won Best Villain Award for 'Aitraaz'?
+$Answer=Priyanka Chopra@
+
+Picture24 =shruti.png#
+Question 24a=Daughter of Kamal and Sarika?
+Question 24b=Starred in Dil Toh Baccha Hai Ji?
+Question 24c=Debut with Luck?
+$Answer=Shruti Haasan@
+
+Picture25 =soha.png#
+Question 25a=Daughter of Sharmila Tagore?
+Question 25b=Daughter of Tiger Pataudi?
+Question 25c=Acting debut with 'Dil Maange More'?
+$Answer=Soha Ali@
+
+Picture26 =sonakshi.png#
+Question 26a=Rajjo in 'Dabangg'?
+Question 26b=Daughter of Shatruji?
+Question 26c=Debut with 'Dabangg'?
+$Answer=Sonakshi Sinha@
+
+Picture27 =sonam.png#
+Question 27a=Daughter of Anil Kapoor?
+Question 27b=Acting Debut with Saawariya?
+Question 27c=Starred in Delhi 6?
+$Answer=Sonam Kapoor@
+
+Picture28 =vidya.png#
+Question 28a=Debut with 'Parineeta'?
+Question 28b=Radio-jockey in 'Munna bhai MBBS'?
+Question 28c=Mother of Amitabh Bachchan in 'Paa'?
+$Answer=Vidya Balan@
+
+Picture29 =zarin.png#
+Question 29a=Debut with film 'Veer'?
+Question 29b=Known for item number Character Dheela?
+Question 29c=Looks very similar to Katrina Kaif?
+$Answer=Zarine Khan@
+
+Picture30 =katrina.png#
+Question 30a=Debut with 'Boom'?
+Question 30b=Starred in 'Zindagi Na Milegi Dobara'?
+Question 30c=British Indian actress?
+$Answer=Katrina Kaif@
+
+Picture31 =Antra.png#
+Question 31a=Director of 'Mr Ya Miss'?
+Question 31b=In 'Main Madhuri Dixit Banna Chahti Hoon'?
+Question 31c=Debut in 'Mast'?
+$Answer=Antara Mali@
+
+Picture32 =Archana.png#
+Question 32a=One of the judge in Comedy Circus?
+Question 32b=Anchor in TV show Wah Kya Scene Hai?
+Question 32c=Best Comedian Award in 'Kuch Kuch Hota Hai'?
+$Answer=Archana Puran@
+
+Picture33 =Ayesha.png#
+Question 33a=Lead actress in the film 'Meet Mere Mann Ke'?
+Question 33b=Starred in 'Jo Jeeta Wohi Sikander'?
+Question 33c=Starred in 'Kurbaan' with Salman Khan?
+$Answer=Ayesha Jhulka@
+
+Picture34 =Bhagyashree.png#
+Question 34a=Acting debut with TV serial Kachhi Dhoop?
+Question 34b=Starred in 'Maine Pyaar Kiya'?
+Question 34c=Won Filmfare Lux New Face Award in 1990?
+$Answer=Bhagyashree @
+
+Picture35 =Bhoomika.png#
+Question 35a=First Bollywood film 'Tere Naam'?
+Question 35b=Nirjara in 'tere naam'?
+Question 35c=In TV series Hip Hip Hurray?
+$Answer=Bhumika Chawla@
+
+Picture36 =Divya.png#
+Question 36a=Debut in 'Vishwatma' opposite Sunny Deol?
+Question 36b=Died at the age of 19 years?
+Question 36c=Married film producer Sajid Nadiadwala?
+$Answer=Divya Bharti@
+
+Picture37 =Gracy.png#
+Question 37a=Gauri of 'Lagaan'?
+Question 37b=In television serial Intazar Aur Sahii?
+Question 37c=Dr. Suman of 'Munnabhai MBBS'?
+$Answer=Gracy Singh@
+
+Picture38 =Gul.png#
+Question 38a=Won the coveted Miss India title in 1999?
+Question 38b=Best Supporting Actress Role in 'Hello'?
+Question 38c=Debut in 'Dhoop'?
+$Answer=Gul Panag@
+
+Picture39 =Isha.png#
+Question 39a=In 'Ek Tha Dil Ek Thi Dhadhkan'?
+Question 39b=Brief appearance in 'Fiza' as Gitanjali?
+Question 39c=In 'Dil Ka Rishta' opposite Aishwarya?
+$Answer=Eesha Koppikhar@
+
+Picture40 =Jiah.png#
+Question 40a=Starred as Devika in 'Houseful'l?
+Question 40b=Starred as Sunita in 'Ghajini'?
+Question 40c=Debut with film 'Nishabd'?
+$Answer=Jiah Khan@
+
+Picture41 =Juhi.png#
+Question 41a=Won Miss India beauty in 1984?
+Question 41b=Famous for QSQT with Aamir?
+Question 41c=Co-owner of Production Co Dreamz Unlimited?
+$Answer=Juhi Chawla@
+
+Picture42 =Kajol.png#
+Question 42a=Daughter of actress Tanuja?
+Question 42b=Famous for 'Kabhi Khushi Kabhie Gham'?
+Question 42c=Married to Ajay Devgan?
+$Answer=Kajol@
+
+Picture43 =Karisma.png#
+Question 43a=Informally referred to as Lolo?
+Question 43b=won Best Actress Award for 'Raja Hindustani'?
+Question 43c=Daughter of Babita and Randhir?
+$Answer=Karisma Kapoor@
+
+Picture44 =Kim.png#
+Question 44a=Brand ambassador of Olay in India?
+Question 44b=Debut in 'Mohabbatein'?
+Question 44c=As Sanjana in 'Mohabbate'?
+$Answer=Kim Sharma@
+
+Picture45 =kirthi.png#
+Question 45a=Debut in 'Tera Jadoo Chal Gayaa'?
+Question 45b=Daughter of Ex MP from Nizamabad?
+Question 45c=Pooja in 'Tera Jadoo Chal Gayaa'?
+$Answer=Keerthi Reddy@
+
+Picture46 =Koena.png#
+Question 46a=Won beauty pageant Gladrags Mega Model India 2003?
+Question 46b=Starred in 'Ek Khiladi Ek Haseena' opposite Fardeen?
+Question 46c=Special Appearance in Item Number Khullam Khulla?
+$Answer=Koena Mitra@
+
+Picture47 =Konkona.png#
+Question 47a=Married to Ranvir Shorey?
+Question 47b=Meenakshi of award winning 'Mr. and Mrs. Iyer'?
+Question 47c=National Film Award Best Supporting Actress in 'Omkara'?
+$Answer=Konkona Sen@
+
+Picture48 =Lisa.png#
+Question 48a=Anchored TV show Star Biz?
+Question 48b=Toronto based actressr?
+Question 48c=Starred in the Oscar nominated film 'Water'?
+$Answer=Lisa Ray@
+
+Picture49 =Madhuri.png#
+Question 49a=Chandramukhi in 'Devdas'?
+Question 49b=Nisha in 'Hum Aapke Hain Koun'?
+Question 49c=Married to Shriram Madhav Nene?
+$Answer=Madhuri Dixit@
+
+Picture50 =Mahima.png#
+Question 50a=Debut in 'Pardes' in 1997?
+Question 50b=Best Female Debut for 'Pardes'?
+Question 50c=Best Supporting Actress for 'Dhadkan'?
+$Answer=Mahima Chaudhry@
+
+Picture51 =malaika.png#
+Question 51a=Married to Arbaaz?
+Question 51b=Judge in TV show Nach Baliye?
+Question 51c=Famous for dance on song Munni Badnaam Hui?
+$Answer=Malaika Arora@
+
+Picture52 =mandira.png#
+Question 52a=Hosting on TV for ICC Cricket World Cups 2003?
+Question 52b=Played Kajols rival in 'Dilwale Dulhania Le Jayege'?
+Question 52c=Presents with Charu Sharma on TV?
+$Answer=Mandira Bedi@
+
+Picture53 =nagma.png#
+Question 53a=Debut film 'Baaghi: A Rebel for Love'?
+Question 53b=First film 'Baaghi'?
+Question 53c=With Karishma was a female lead in 'Suhaag'?
+$Answer=Nagma @
+
+Picture54 =Parineeti.png#
+Question 54a=Cousin of actress Priyanka...?
+Question 54b=Won Best Female Debut for 'Ladies VS Ricky Bahl'?
+Question 54c=Starred in film 'Ishaqzaade'?
+$Answer=Parineeti Chopra@
+
+Picture55 =pooja.png#
+Question 55a=Produced and Directed of 'Paap'?
+Question 55b=Daughter of Mahesh....?
+Question 55c=Acting debut in Hindi TV serial Daddy?
+$Answer=Pooja Bhatt@
+
+Picture56 =poonam.png#
+Question 56a=Crowned Miss Young India at age of 16?
+Question 56b=Starred in 'Noorie' opposite Rajesh Khanna?
+Question 56c=Performed song Gapoochi Gapoochi Gum Gum?
+$Answer=Poonam Dhillon@
+
+Picture57 =preeti.png#
+Question 57a=Debut with 'Mohabbatein' as Kiran?
+Question 57b=Acted in 'Awara Paagal Deewana' as Preeti?
+Question 57c=Appeared in music album Yeh Hai Prem?
+$Answer=Preeti Jhangiani@
+
+Picture58 =preity.png#
+Question 58a=Acrting debut in 'Dil Se'?
+Question 58b=Won Filmfare Award in 'Kal Ho Naa Ho'?
+Question 58c=Shalini of 'Dil Chahta Hai'?
+$Answer=Preity Zinta@
+
+Picture59 =rani.png#
+Question 59a=Rhea of 'Hum Tum'?
+Question 59b=Khandala girl?
+Question 59c=Tina of 'Kuch Kuch Hota Hain'?
+$Answer=Rani Mukerji@
+
+Picture60 =ravina.png#
+Question 60a=Debut with 'Patthar Ke Phool'?
+Question 60b=Hosts TV show Isi Ka Naam Zindagi?
+Question 60c=Roma of film 'Mohra'?
+$Answer=Raveena Tandon@
+
+Picture61 =riya.png#
+Question 61a=Granddaughter of Suchitra..?
+Question 61b=Daughter f Moon Moon..?
+Question 61c=Debut in 'Love You Hamesha'?
+$Answer=Riya Sen@
+
+Picture62 =sameera.png#
+Question 62a=Debut film  'Maine Dil Tujhko Diya'?
+Question 62b=Starred as Sam in 'Musafir'?
+Question 62c=In Pankaj Udhas's ghazal Aur Aahista music video?
+$Answer=Sameera Reddy@
+
+Picture63 =sonali.png#
+Question 63a=Debut with  Aag (1994)?
+Question 63b=Judge on Indian Idol 4?
+Question 63c=Priya in 'Gaddaar'?
+$Answer=Sonali Bendre@
+
+Picture64 =sridevi.png#
+Question 64a=Married to Boney Kapoor?
+Question 64b=won Best Actress Award for 'Sadma'?
+Question 64c=Chandni girl?
+$Answer=Sridevi @
+
+Picture65 =sushmita.png#
+Question 65a=Miss Universe in 1994?
+Question 65b=Won title Femina Miss India beating Aishwarya?
+Question 65c=Acting debut in film 'Dastak'?
+$Answer=Sushmita Sen@
+
+Picture66 =taboo.png#
+Question 66a=National Film Best Actress Award for 'Maachis'?
+Question 66b=Niece of Shabana Azmi?
+Question 66c=National Film Best Actress Award for 'Chandni Bar'?
+$Answer=Tabu @
+
+Picture67 =urmila.png#
+Question 67a=Debut with film 'Bade Ghar Ki Beti'?
+Question 67b=Mili Joshi in 'Rangeela'?
+Question 67c=Pinky as child artist in 'Masoom 1983'?
+$Answer=Urmila Matondkar@
+
+Picture68 =Aruna.png#
+Question 68a=Mother of Anil Kapoor in 'Beta'?
+Question 68b=Over 300 films as Supporting Actress?
+Question 68c=Performed dance in Caravan (1971) Chadti Jawani Mein?
+$Answer=Aruna Irani@
+
+Picture69 =asha.png#
+Question 69a=Supporting Actress in 'Main Tulsi Tere Aangan Ki'?
+Question 69b=First female chairperson of Censor Board?
+Question 69c=Filmfare Best Actress Award for 'Kati Patang'?
+$Answer=Asha Parekh@
+
+Picture70 =babita.png#
+Question 70a=Mother of Karishma and Kareena?
+Question 70b=Wife of Randhir...r?
+Question 70c=Daughter-in-law of Raj...?
+$Answer=Babita @
+
+Picture71 =Dimple.png#
+Question 71a=Wife of Rajesh Khanna?
+Question 71b=Acting debut with 'Bobby'?
+Question 71c=Mother of Twinkle Khanna?
+$Answer=Dimple Kapadia@
+
+Picture72 =Farida.png#
+Question 72a=Shahrukh's mother in 'Kuch Kuch Hota Hai'?
+Question 72b=Mother of Kajol in 'DDLJ'?
+Question 72c=Opposite Rajesh Khanna in 'Aaradhana'?
+$Answer=Farida Jalal@
+
+Picture73 =hema.png#
+Question 73a=Basanti of 'Sholay'?
+Question 73b=Dream Girl.....?
+Question 73c=Acting debut in Sapno Ka Saudagar(1968)'?
+$Answer=Hema Malini@
+
+Picture74 =jaya.png#
+Question 74a=Married to Amitabh...?
+Question 74b=Mother of Abhishek...?
+Question 74c=Guddi Abhimaan 'Kora Kagaz girl'?
+$Answer=Jaya Bhaduri@
+
+Picture75 =kirron.png#
+Question 75a=Wife of anupam kher?
+Question 75b=Lead Actress in 'Sardari Begum'?
+Question 75c=Mother of Ashwariya in 'Devdas'?
+$Answer=Kirron Kher@
+
+Picture76 =Leena.png#
+Question 76a=Debut in Man Ka Meet?
+Question 76b=One of the wives of Kishore Kumar?
+Question 76c=Shabana in 'Mehboob Ki Mehndi'?
+$Answer=Leena Chandavarkar@
+
+Picture77 =Madhubala.png#
+Question 77a=Anarkali of 'Mughal-e-Azam'?
+Question 77b=Born as Mumtaz Jahan Begum?
+Question 77c=Daughter of Ataullah Khan?
+$Answer=Madhubala @
+
+Picture78 =mala.png#
+Question 78a=Starred in 'Dhool Ka Phool'?
+Question 78b=Best Actress in Jahan Ara?
+Question 78c=Best Actress in 'Himalaya Ki God Mein'?
+$Answer=Mala Sinha@
+
+Picture79 =meena.png#
+Question 79a=Born as Mahjabeen Bano?
+Question 79b=Known as the Tragedy Queen?
+Question 79c='Pakeezah' girl?
+$Answer=Meena Kumari@
+
+Picture80 =Mumtaz.png#
+Question 80a=Filmfare Best Actress Award in 'Khilona'?
+Question 80b=Starred in film 'Roti'?
+Question 80c=Starred in film 'Khilona'?
+$Answer=Mumtaz @
+
+Picture81 =nanda.png#
+Question 81a=Best Actress for 'Prem Rog (1982)'?
+Question 81b=Debut with 'Toofan Aur Deeya'?
+Question 81c=Starred in 'Jab Jab Phool Khile'?
+$Answer=Nanda @
+
+Picture82 =Nargis.png#
+Question 82a=Born as Fatima Rashid?
+Question 82b=Mother of  Sanjay dutt?
+Question 82c=Mother India?
+$Answer=Nargis @
+
+Picture83 =Nutan.png#
+Question 83a=Kalyani Bimal Roy's Bandini?
+Question 83b=Mother of Mohnish Bahl?
+Question 83c=Starred opposite Raj Kapoor in 'Chhalia'?
+$Answer=Nutan @
+
+Picture84 =neetu.png#
+Question 84a=Wife of Rishi Kapoor?
+Question 84b=Mother of Ranbir  kapoor?
+Question 84c=Leena of 'Deewar'?
+$Answer=Neetu Singh@
+
+Picture85 =Nirupa.png#
+Question 85a=Greatest Maa of Bollywood?
+Question 85b=Mother of Amitabh Bachchan in 'Deewar'?
+Question 85c=Starred in 'Do Bigha Zameen'?
+$Answer=Nirupa Roy@
+
+Picture86 =padmini.png#
+Question 86a=Won Best Actress Award for 'Prem Rog'?
+Question 86b=In 'Pyar Jhukta Nahin'?
+Question 86c=Kissed Prince Charles?
+$Answer=Padmini Kolhapure@
+
+Picture87 =priya.png#
+Question 87a=Starred in 'Heer Raanjha'?
+Question 87b=Chetan Anand's discovery?
+Question 87c=Starred in 'Hindustan Ki Kasam'?
+$Answer=Priya Rajvansh@
+
+Picture88 =rakhi.png#
+Question 88a=Wife of Gulzar?
+Question 88b=Played double role in 'Sharmilee'?
+Question 88c=Starred in 'Bemisal'?
+$Answer=Raakhee@
+
+Picture89 =Helen.png#
+Question 89a=Documentary on her-'Queen of the Nautch girls'?
+Question 89b=Mehbooba Mehbooba of 'Sholay'?
+Question 89c=Performed song 'Mera Naam Chin Chin Chu'?
+$Answer=Helen@
+
+Picture90 =reena.png#
+Question 90a=Was married to Pak cricketer Mohsin Khan?
+Question 90b=Starred in 'Kalicharan'?
+Question 90c=Played as female snake in 'Nagin'?
+$Answer=Reena Roy@
+
+Picture91 =rekha.png#
+Question 91a=Starred in 'Umrao Jaan'?
+Question 91b=Chandni in 'Silsila'?
+Question 91c=Villain in 'Khiladiyon Ka Khiladi'?
+$Answer=Rekha @
+
+Picture92 =sabana.png#
+Question 92a=Daughter of Kaifi Azmi?
+Question 92b=Wife of Javed Akhtar?
+Question 92c=Won National Award for 'Ankur' movie?
+$Answer=Shabana Azmi@
+
+Picture93 =sadhana.png#
+Question 93a=Her name is famous for Hair style?
+Question 93b=Starred in 'Wadt (1965)'?
+Question 93c=Famous as Mystery girl?
+$Answer=Sadhana @
+
+Picture94 =saira.png#
+Question 94a=Debut in 'Jungle'e opp Shammi?
+Question 94b=wife of Yusuf Khan?
+Question 94c=Best actrress for 'Shagird' and 'Diwana'?
+$Answer=Saira Banu@
+
+Picture95 =Samita.png#
+Question 95a=Married Raj Babbar?
+Question 95b=Poonam in 'Namak Halal'?
+Question 95c=Notable role in 'Manthan'?
+$Answer=Smita Patil@
+
+Picture96 =sharmila.png#
+Question 96a=Popular as Kashmir Ki Kali?
+Question 96b=Tiger's wife?
+Question 96c=Starred in 'An Evening in Paris'?
+$Answer=Sharmila Tagore@
+
+Picture97 =Tanuja.png#
+Question 97a=Mother of Kajol?
+Question 97b=Nutan's sister?
+Question 97c=Starred in 'Haathi Mere Saathi'?
+$Answer=Tanuja@
+
+Picture98 =waheeda.png#
+Question 98a=Starred in 'Pyaasa'?
+Question 98b=Starred in 'Sahib Bibi Aur Ghulam'?
+Question 98c=Rosie in 'Guide'?
+$Answer=Waheeda Rehman@
+
+Picture99 =Zeenat.png#
+Question 99a=Miss Asia Pacific 1970?
+Question 99b=Famous for Dam Maro Dam?
+Question 99c=Roopa in 'Satyam Shivam Sundaram'?
+$Answer=Zeenat Aman@
