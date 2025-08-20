@@ -14,7 +14,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.SplashActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,17 +24,24 @@
         </activity>
         <activity
             android:name=".activity.MainMenuActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false" />
         <activity
             android:name=".activity.AboutActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false" />
         <activity
             android:name=".activity.InstructionActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false" />
         <activity
             android:name=".activity.PlayActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".activity.ScoreActivity"></activity>
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity 
+            android:name=".activity.ScoreActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
