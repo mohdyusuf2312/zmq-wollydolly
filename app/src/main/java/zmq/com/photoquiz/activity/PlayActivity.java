@@ -7,12 +7,14 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import zmq.com.photoquiz.R;
 import zmq.com.photoquiz.canvas.BaseSurface;
 import zmq.com.photoquiz.canvas.GameView;
 import zmq.com.photoquiz.utility.AudioPlayer;
 
-public class PlayActivity extends Activity {
+public class PlayActivity extends AppCompatActivity {
 
     private GameView quizView;
     private BaseSurface baseSurface;
