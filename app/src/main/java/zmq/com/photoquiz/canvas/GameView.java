@@ -11,7 +11,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
+import androidx.annotation.RequiresApi;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;

@@ -1,7 +1,7 @@
 package zmq.com.photoquiz.activity;
 
 import android.app.Application;
-import android.arch.persistence.room.Room;
+import androidx.room.Room;
 
 import zmq.com.photoquiz.database.MyDatabase;
 
