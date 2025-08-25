@@ -14,6 +14,7 @@ import zmq.com.photoquiz.utility.GlobalVariables;
 
 /**
  * Created by zmq181 on 5/2/19.
+ * Recreated by Mohd Yusuf on 25/Aug/2025.
  */
 
 public class AnimationSpirit {
