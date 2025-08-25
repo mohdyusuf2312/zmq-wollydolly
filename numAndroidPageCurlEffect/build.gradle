@@ -27,5 +27,8 @@ android {
 
 dependencies {
     // No external dependencies required
+    
+    // Test dependencies
+    testImplementation 'junit:junit:4.13.2'
 }
 
