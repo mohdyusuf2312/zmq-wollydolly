@@ -31,7 +31,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View v) {
         switch (v.getId()){
             case  R.id.play:
-                printSecreenInfo();
+                printScreenInfo();
                 startActivity(new Intent(this,PlayActivity.class));
                 break;
 
@@ -49,7 +49,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    void printSecreenInfo() {
+    void printScreenInfo() {
         GlobalVariables.getResource = getResources();
         Display display = getWindowManager().getDefaultDisplay();
         DisplayMetrics metrics = new DisplayMetrics();
