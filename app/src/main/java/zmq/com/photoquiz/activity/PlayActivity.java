@@ -26,6 +26,8 @@ public class PlayActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        
+        // Create the GameView
         quizView = new GameView(this);
         setContentView(quizView);
     }
@@ -34,9 +36,10 @@ public class PlayActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        baseSurface= (BaseSurface) findViewById(123);
+        // Start background music when resuming
+        baseSurface = (BaseSurface) findViewById(123);
 
-        if(baseSurface!=null) {
+        if(baseSurface != null) {
             if (isRecreate && baseSurface.gameThread == null) {
                 baseSurface.setHolder();
                 quizView.timer_running = true;
@@ -45,8 +48,8 @@ public class PlayActivity extends AppCompatActivity {
                 AudioPlayer.playBackground(this, R.raw.background);
             }
         }
-        else{
-            System.out.println("baseSurface null..");
+        else {
+            System.out.println("BaseSurface is null");
         }
     }
 
@@ -54,7 +57,9 @@ public class PlayActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         AudioPlayer.stopSound();
-        quizView.timer_running = false;
+        if (quizView != null) {
+            quizView.timer_running = false;
+        }
     }
 
     @Override
