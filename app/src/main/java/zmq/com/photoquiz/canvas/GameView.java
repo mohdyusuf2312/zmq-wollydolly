@@ -77,6 +77,7 @@ public class GameView extends BaseSurface {
             question, key_bg, curtain_left, curtain_right, right_ans_bg, wrong_ans_bg, won_bg;
     private TextAnimation score_text, score, timer_text, time, live_text, lives, q_text, ques;
 
+    private Context context;
 
     /*float next_x = (GlobalVariables.width - GlobalVariables.xScale_factor * 100) / 2;
     float next_y = GlobalVariables.yScale_factor * 740;
@@ -96,6 +97,7 @@ public class GameView extends BaseSurface {
 
     public GameView(Context context) {
         super(context);
+        this.context = context;
         runningMode = GameMode.LOAD;
         key = new Key();
         setWillNotDraw(false);
@@ -108,10 +110,13 @@ public class GameView extends BaseSurface {
             loadResources();
             getQuestion();
         }
+        drawSomething(canvas); // always draw based on current state
+        invalidate(); // keep redrawing
     }
 
 
     private void parseQuestion() {
+        System.out.println("GameView: parseQuestion() called");
         InputStream inputStream = getResources().openRawResource(R.raw.question);
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
         String picture;
@@ -124,97 +129,120 @@ public class GameView extends BaseSurface {
                 picture = picture.split("=")[1];
                 picture = picture.substring(0, picture.length() - 5);
                 questionDetails.setImage(picture.toLowerCase().trim());
+                System.out.println("GameView: Loading image: " + picture.toLowerCase().trim());
 
                 picture = bufferedReader.readLine();
                 picture = picture.split("=")[1];
                 picture = picture.substring(0, picture.length());
                 q[0] = picture.trim();
+                System.out.println("GameView: Loading question[0]: " + q[0]);
 
                 picture = bufferedReader.readLine();
                 picture = picture.split("=")[1];
                 picture = picture.substring(0, picture.length());
                 q[1] = picture.trim();
+                System.out.println("GameView: Loading question[1]: " + q[1]);
 
                 picture = bufferedReader.readLine();
                 picture = picture.split("=")[1];
                 picture = picture.substring(0, picture.length());
                 q[2] = picture.trim();
+                System.out.println("GameView: Loading question[2]: " + q[2]);
                 questionDetails.setQuestion(q);
 
                 picture = bufferedReader.readLine();
                 picture = picture.substring(8, picture.length() - 1);
                 questionDetails.setAnswer(picture.trim());
+                System.out.println("GameView: Loading answer: " + picture.trim());
+
                 questionDetailsList.add(questionDetails);
+                System.out.println("GameView: Added question to list, total count: " + questionDetailsList.size());
                 bufferedReader.readLine();
             }
-
+            System.out.println("GameView: parseQuestion completed, total questions loaded: " + questionDetailsList.size());
         } catch (IOException e) {
+            System.out.println("GameView: ERROR parsing questions: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
 
     private void getQuestion() {
-        questionDetails = questionDetailsList.get(getRandomNumber(0, questionDetailsList.size()));
-//        questionDetails = questionDetailsList.get(69);
-
-        String[] dumy_ans = questionDetails.getQuestion()[getRandomNumber(0, 2)].split(" ");
-//        String[] dumy_ans = questionDetails.getQuestion()[0].split(" ");
-        question_lines.clear();
-        String line = "";
-        for (int i = 0; i < dumy_ans.length; i++) {
-            if (line.length() + dumy_ans[i].length() > 30) {
-                question_lines.add(line);
-                line = "";
-                line += dumy_ans[i] + " ";
-            } else {
-                line += dumy_ans[i] + " ";
+        System.out.println("GameView: getQuestion() called, questionDetailsList size: " + (questionDetailsList != null ? questionDetailsList.size() : "null"));
+        
+        if (questionDetailsList != null && questionDetailsList.size() > 0) {
+            questionDetails = questionDetailsList.get(getRandomNumber(0, questionDetailsList.size()));
+            System.out.println("GameView: Selected question at index: " + (questionDetailsList.indexOf(questionDetails)));
+            
+            String[] dumy_ans = questionDetails.getQuestion()[getRandomNumber(0, 2)].split(" ");
+            System.out.println("GameView: Question text: " + String.join(" ", dumy_ans));
+            
+            question_lines.clear();
+            String line = "";
+            for (int i = 0; i < dumy_ans.length; i++) {
+                if (line.length() + dumy_ans[i].length() > 30) {
+                    question_lines.add(line);
+                    line = "";
+                    line += dumy_ans[i] + " ";
+                } else {
+                    line += dumy_ans[i] + " ";
+                }
             }
-        }
-        question_lines.add(line);
-        game_time = 60;
-        game_lives = 9;
-        game_question++;
-        photo_frame = getRandomNumber(1, 5);
-        int resourceId = context.getResources().getIdentifier(questionDetails.getImage(), "drawable", context.getPackageName());
-        time.setText(String.valueOf(game_time));
-        lives.setText(String.valueOf(game_lives));
-        ques.setText(String.valueOf(game_question));
+            question_lines.add(line);
+            System.out.println("GameView: Question lines created: " + question_lines.size());
+            
+            game_time = 60;
+            game_lives = 9;
+            game_question++;
+            photo_frame = getRandomNumber(1, 5);
+            int resourceId = getResources().getIdentifier(questionDetails.getImage(), "drawable", getContext().getPackageName());
+            System.out.println("GameView: Resource ID for image: " + resourceId);
+            
+            time.setText(String.valueOf(game_time));
+            lives.setText(String.valueOf(game_lives));
+            ques.setText(String.valueOf(game_question));
 
-        keyAndChars.clear();
-        String ans[] = questionDetails.getAnswer().split(" ");
-        for (int i = 0; i < ans.length; i++) {
-            for (int j = 0; j < ans[i].length(); j++) {
-                float x = (480 - (ans[i].length() * 40)) / 2 + (40 * j);
-                float y = 500 + (40 * i);
-                float dx = 40;
-                float dy = 40;
-                KeyAndChar keyAndChar = new KeyAndChar(Utility.decodeSampledBitmapFromResource(GlobalVariables.getResource, R.drawable.key_ring), x, y, dx, dy, ans[i].substring(j, j + 1), 30);
-                keyAndChars.add(keyAndChar);
+            keyAndChars.clear();
+            String ans[] = questionDetails.getAnswer().split(" ");
+            System.out.println("GameView: Answer words: " + String.join(", ", ans));
+            
+            for (int i = 0; i < ans.length; i++) {
+                for (int j = 0; j < ans[i].length(); j++) {
+                    float x = (480 - (ans[i].length() * 40)) / 2 + (40 * j);
+                    float y = 500 + (40 * i);
+                    float dx = 40;
+                    float dy = 40;
+                    KeyAndChar keyAndChar = new KeyAndChar(Utility.decodeSampledBitmapFromResource(GlobalVariables.getResource, R.drawable.key_ring), x, y, dx, dy, ans[i].substring(j, j + 1), 30);
+                    keyAndChars.add(keyAndChar);
+                    System.out.println("GameView: Added keyAndChar: " + ans[i].substring(j, j + 1) + " at position (" + x + ", " + y + ")");
+                }
             }
+
+            for (KeyAndChar keyAndChar : keyboard) {
+                keyAndChar.clear();
+            }
+            isAnswerComplete = true;
+            right_ans = false;
+
+            startTimer();
+
+            dividation = 20;
+            row = 7;
+            col = 5;
+            frames = Arrays.asList(0, 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19);
+            frames_sq = Arrays.asList(
+                    "00", "01", "02", "03", "04"
+                    , "10", "11", "12", "13", "14"
+                    , "20", "21", "22", "23", "24"
+                    , "30", "31", "33", "34"
+                    , "40", "41", "42", "43", "44"
+                    , "50", "51", "52", "53", "54"
+                    , "60", "61", "62", "63", "64");
+            actress.setBitmap(Utility.decodeSampledBitmapFromResource(GlobalVariables.getResource, resourceId));
+            System.out.println("GameView: Question setup complete");
+        } else {
+            System.out.println("GameView: ERROR - questionDetailsList is null or empty!");
         }
-
-        for (KeyAndChar keyAndChar : keyboard) {
-            keyAndChar.clear();
-        }
-        isAnswerComplete = true;
-        right_ans = false;
-
-        startTimer();
-
-        dividation = 20;
-        row = 7;
-        col = 5;
-        frames = Arrays.asList(0, 1, 2, 3, 4, 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19);
-        frames_sq = Arrays.asList(
-                "00", "01", "02", "03", "04"
-                , "10", "11", "12", "13", "14"
-                , "20", "21", "22", "23", "24"
-                , "30", "31", "33", "34"
-                , "40", "41", "42", "43", "44"
-                , "50", "51", "52", "53", "54"
-                , "60", "61", "62", "63", "64");
-        actress.setBitmap(Utility.decodeSampledBitmapFromResource(GlobalVariables.getResource, resourceId));
     }
 
     private int getRandomNumber(int start, int end) {
@@ -237,11 +265,11 @@ public class GameView extends BaseSurface {
                     game_time--;
                 } else {
                     if (game_time == 0) {
-                        AudioPlayer.playSound(context, R.raw.loose);
+                        AudioPlayer.playSound(getContext(), R.raw.loose);
                         wrong_ans = true;
                         dialog_tittle = "Sorry!";
                         dialog_message = "Your time is up...";
-                        ((PlayActivity) context).runOnUiThread(new Runnable() {
+                        ((PlayActivity) getContext()).runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
                                 showDialog();
@@ -490,8 +518,11 @@ public class GameView extends BaseSurface {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        System.out.println("GameView: onTouchEvent called, action: " + event.getAction() + ", runningMode: " + runningMode);
+        
         RectF touchrectF = new RectF(event.getX(), event.getY(), event.getX() + 1, event.getY() + 1);
         if (runningMode == GameMode.READY && touchrectF.intersect(new RectF(touch.getX_position(), touch.getY_position(), touch.getX_position() + touch.getFrame_width(), touch.getY_position() + touch.getFrame_height()))) {
+            System.out.println("GameView: Touch detected on READY screen, starting game...");
             touch.load(AnimationSpirit.SCALE_IN);
             isAnimation = true;
             touch.valueAnimator.start();
@@ -504,10 +535,12 @@ public class GameView extends BaseSurface {
             question.load(AnimationSpirit.SCALE_OUT_IN);
             question.valueAnimator.start();
             runningMode = GameMode.START;
+            System.out.println("GameView: runningMode changed to START");
 
             score_light.valueAnimator.addListener(new AnimatorListenerAdapter() {
                 @Override
                 public void onAnimationEnd(Animator animation) {
+                    System.out.println("GameView: Animation ended, starting text animations...");
                     isAnimation = false;
                     score_text.setValueAnimator(Animation.SPREAD);
                     score_text.valueAnimator.start();
@@ -524,7 +557,7 @@ public class GameView extends BaseSurface {
                 }
             });
             thread.start();
-            AudioPlayer.playBackground(context, R.raw.background);
+            AudioPlayer.playBackground(getContext(), R.raw.background);
         } else if (!right_ans && !wrong_ans && !won_ans && !saveData) {
 
             for (KeyAndChar keyAndChar : keyboard) {
@@ -537,18 +570,18 @@ public class GameView extends BaseSurface {
                         key.setY_cord(keyAndChar.getY_pos());
                         if (questionDetails.getAnswer().toUpperCase().contains(keyAndChar.getKey())) {
                             keyAndChar.setBitmap(Utility.decodeSampledBitmapFromResource(GlobalVariables.getResource, R.drawable.key_green));
-                            AudioPlayer.playSound(context, R.raw.right);
+                            AudioPlayer.playSound(getContext(), R.raw.right);
                             game_score += 10;
 
                         } else {
                             keyAndChar.setBitmap(Utility.decodeSampledBitmapFromResource(GlobalVariables.getResource, R.drawable.key_red));
-                            AudioPlayer.playSound(context, R.raw.wrong);
+                            AudioPlayer.playSound(getContext(), R.raw.wrong);
                             if (game_score >= 10)
                                 game_score -= 10;
                             game_lives--;
                             lives.setText(String.valueOf(game_lives));
                             if (game_lives == 0) {
-                                AudioPlayer.playSound(context, R.raw.loose);
+                                AudioPlayer.playSound(getContext(), R.raw.loose);
                                 wrong_ans = true;
                                 dialog_tittle = "Sorry!";
                                 dialog_message = "Your lives is over...";
@@ -684,10 +717,10 @@ public class GameView extends BaseSurface {
 
                         if (isAnswerComplete) {
                             if (game_question == 9) {
-                                AudioPlayer.playSound(context, R.raw.win);
+                                AudioPlayer.playSound(getContext(), R.raw.win);
                                 won_ans = true;
-                                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                                View view = LayoutInflater.from(context).inflate(R.layout.win, null, false);
+                                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                                View view = LayoutInflater.from(getContext()).inflate(R.layout.win, null, false);
                                 ((TextView) view.findViewById(R.id.text3)).setText("You Score is : " + (game_score + game_time));
                                 Button yes = view.findViewById(R.id.btn1);
                                 Button no = view.findViewById(R.id.btn2);
@@ -709,9 +742,9 @@ public class GameView extends BaseSurface {
                                     public void onClick(View v) {
                                         won_ans = false;
                                         saveData = true;
-                                        AudioPlayer.playSound(context, R.raw.win);
-                                        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                                        View view = LayoutInflater.from(context).inflate(R.layout.save_data, null, false);
+                                        AudioPlayer.playSound(getContext(), R.raw.win);
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                                        View view = LayoutInflater.from(getContext()).inflate(R.layout.save_data, null, false);
                                         TextView score = view.findViewById(R.id.score);
                                         EditText name = view.findViewById(R.id.edit);
                                         score.setText(String.valueOf(game_score + game_time));
@@ -740,7 +773,7 @@ public class GameView extends BaseSurface {
                                                 wrong_ans = true;
                                                 dialog_tittle = "Your Answer saved!";
                                                 dialog_message = "";
-                                                AudioPlayer.playSound(context, R.raw.win);
+                                                AudioPlayer.playSound(getContext(), R.raw.win);
                                                 showDialog();
                                             }
                                         });
@@ -755,21 +788,21 @@ public class GameView extends BaseSurface {
                                         wrong_ans = true;
                                         dialog_tittle = "Choose Option!";
                                         dialog_message = "You Score was : " + (game_score + game_time);
-                                        AudioPlayer.playSound(context, R.raw.win);
+                                        AudioPlayer.playSound(getContext(), R.raw.win);
                                         showDialog();
                                         dialog.dismiss();
                                     }
                                 });
                             } else {
-                                AudioPlayer.playSound(context, R.raw.newques);
+                                AudioPlayer.playSound(getContext(), R.raw.newques);
                                 right_ans = true;
                                 game_score +=game_time;
                                 score.setText(String.valueOf(game_score).length() > 1 ? String.valueOf(game_score) : "0" + game_score);
                                 dialog_message = "Click for Next Question...";
 
-                                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                                View view = LayoutInflater.from(context).inflate(R.layout.next_question, null, false);
-                                Typeface font = Typeface.createFromAsset(context.getAssets(), "noteworthy.ttf");
+                                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                                View view = LayoutInflater.from(getContext()).inflate(R.layout.next_question, null, false);
+                                Typeface font = Typeface.createFromAsset(getContext().getAssets(), "noteworthy.ttf");
                                 Button save = view.findViewById(R.id.btn1);
 
                                 builder.setView(view);
@@ -917,8 +950,8 @@ public class GameView extends BaseSurface {
     }
 
     private void showDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        View view = LayoutInflater.from(context).inflate(R.layout.failed, null, false);
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.failed, null, false);
         ((TextView) view.findViewById(R.id.text1)).setText(dialog_tittle);
         ((TextView) view.findViewById(R.id.text2)).setText(dialog_message);
         ((TextView) view.findViewById(R.id.text3)).setText("Answer Was " + questionDetails.getAnswer());
@@ -940,9 +973,9 @@ public class GameView extends BaseSurface {
         play.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, PlayActivity.class);
+                Intent intent = new Intent(getContext(), PlayActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                context.startActivity(intent);
+                getContext().startActivity(intent);
                 dialog.dismiss();
             }
         });
@@ -950,7 +983,7 @@ public class GameView extends BaseSurface {
         exit.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((PlayActivity) context).finish();
+                ((PlayActivity) getContext()).finish();
                 dialog.dismiss();
             }
         });
